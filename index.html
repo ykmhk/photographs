@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="archive-container">
+    
+    <aside class="sidebar">
+      <div class="brand-section">
+        <h1 class="site-title">Y</h1>
+        <p class="site-sub">device - phone</p>
+        <p class="site-sub">just for fun ☆</p>
+      </div>
+
+      <nav class="nav-menu">
+        <button class="nav-item active" data-filter="all">all archives</button>
+        <button class="nav-item" data-filter="bw - nz">bw - nz</button>
+        <button class="nav-item" data-filter="color - nz">color - nz</button>
+        <button class="nav-item" data-filter="hometown">hometown</button>
+        <button class="nav-item" data-filter="indoor">indoor</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <span id="photo-count" class="count-tag">000 ARCHIVES</span>
+      </div>
+    </aside>
+
+    
+    <main class="main-content">
+  <div class="gallery-stream" id="gallery-stream">
+    <div class="gallery-col" id="col-left"></div>
+    <div class="gallery-col" id="col-right"></div>
+  </div>
+</main>
+
+  </div>
+
+  <div class="modal-layer" id="photo-modal">
+  <div class="modal-backdrop" id="modal-backdrop"></div>
+  <button class="modal-control close-btn" id="modal-close">close ✕</button>
+  
+  <div class="modal-content">
+    <button class="modal-control nav-arrow prev-arrow" id="modal-prev">←</button>
+    
+    <div class="stage-wrapper">
+      <div class="image-box">
+        <img id="modal-img" src="" alt="Observed detail">
+      </div>
+      <div class="modal-meta">
+        <span id="modal-index">001 / 000</span>
+        <span class="divider">|</span>
+        <span id="modal-tag">category</span>
+        <span class="divider">|</span>
+        <span class="device-tag">shot on mobile</span>
+      </div>
+    </div>
+
+    <button class="modal-control nav-arrow next-arrow" id="modal-next">→</button>
+  </div>
+</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
