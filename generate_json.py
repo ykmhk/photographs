@@ -21,7 +21,7 @@ for folder_name in subfolders:
     files.sort(key=natural_keys)
     
     for file_name in files:
-        if not file_name.lower().endswith(('.png', '.jpg', '.jpeg', '.webp', '.gif')):
+        if not file_name.lower().endswith(('.png', '.jpg', '.jpeg', '.webp', '.gif', '.heic')):
             continue
             
         photos.append({
